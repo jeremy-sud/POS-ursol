@@ -1,21 +1,42 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "description": "Aplicación backend para el sistema POS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no hay pruebas definidas\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --write .",
+    "format": "prettier --write .",
+    "audit": "npm audit"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "POS",
+    "backend",
+    "express",
+    "mysql"
+  ],
+  "author": "Tu Nombre",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "axios": "^1.8.1",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "express-validator": "^7.2.1",
+    "express-validator": "^6.14.0",
+    "helmet": "^6.2.0",
+    "mysql": "^2.18.1",
     "mysql2": "^3.12.0",
-    "rimraf": "^6.0.1",
+    "pg": "^8.13.3",
+    "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.4"
   }
 }
